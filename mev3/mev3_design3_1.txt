@@ -1,0 +1,46 @@
+
+mev3 loads up...
+
+;
+;;	start up:
+;
+
+read args (actually the project file or
+           the directory where project/map/tile/... are located)
+
+open all needed libraries
+
+open prefs file
+
+open all fonts and stuff....
+
+get app path
+
+get project path from arg #1
+
+load project and setup screen according to project defs...
+or open screen according to prefs defaults
+or open screen according to program defaults
+
+open a screen of 640x200x3 for tools etc..
+
+goto executing messages..
+
+;
+;;	shutdown:
+;
+close all opened windows.
+
+check all projects to see if change and ask ok to quit.
+
+free project nodes / map / tile / etc.
+
+close all libs/fonts/etc.
+
+free mem left in list.
+
+load exit code.
+
+rts
+
+
